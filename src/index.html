@@ -1,27 +1,161 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/smacss/app.scss">
+  <link rel="stylesheet" type="text/css" href="/dist/index.04966099.css ">
+  <title>PEC 1 - Moisés Segura Cedrés</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="assets/images/sombrilla.png" alt="Logo de la página." width="180px" height="180px"></a>
+      <h1>Playa de Las Canteras, Las Palmas de Gran Canaria</h1>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </header>
+  <main class="index-container">
+    <div class="portada">
+      <picture>
+        <source media="(max-width: 480px)" srcset="./assets/images/fotoprincipal.jpg?as=webp&width=350"
+          type="image/webp" />
+        <source media="(min-width: 481px) and (max-width: 830px)" srcset="./assets/images/fotoprincipal.jpg?as=webp"
+          type="image/webp" />
+        <img src="./assets/images/fotoprincipal.jpg" loading="lazy" alt="Mapa de la playa de Las Canteras" />
+      </picture>
+      <p>Las Canteras se extiende en el lado poniente del istmo de Guanarteme, antaño lengua de dunas y arenas que
+        unía las montañas de la península de La Isleta, situadas al noreste, con el resto de la isla de Gran Canaria.
+        La playa es la más extensa de las existentes en la ciudad. Se encuentra orientada al noroeste, en lo que se
+        conoce como arco o bahía del Confital, y se extiende desde las estribaciones de La Isleta hasta poco antes de
+        la desembocadura del barranco de Tamaraceite, durante poco más de tres extensos kilómetros de arena fina y
+        dorada.
+
+        En gran parte de esta longitud, la playa queda resguardada de las corrientes del Atlántico por una barra
+        natural, de arenisca y arrecifes, que es conocida popularmente con el nombre de "la barra" y puede alcanzarse
+        a nado desde la orilla. Por el lado interior de la costa, discurre el Paseo de Las Canteras, vía peatonal que
+        recorre en paralelo toda la playa desde las inmediaciones del Auditorio Alfredo Kraus hasta la zona conocida
+        como "la Puntilla" y de ahí, en prolongación, hasta llegar a las inmediaciones de la playa del Confital, lugar
+        que algunos años atrás solo era frecuentado por practicantes de surf y bodyboarding, donde se genera la que
+        muchos consideran como la mejor ola derecha de Europa. </p>
+    </div>
+
+    <div class="biografia">
+      <h2>Playa de Las Canteras</h2>
+      <img srcset="./assets/images/mapa.png 55w, ./assets/images/mapa.png 800w" sizes="(max-width: 600px) 300px, 700px"
+        src="./assets/images/mapa.png" alt="Mapa de Las Canteras" />
+      <p>
+        La playa de Las Canteras es la playa urbana principal de la ciudad de Las Palmas de Gran Canaria (Gran
+        Canaria, Canarias).Es una de las playas más importantes de Canarias. Frecuentada durante todo el año, es la
+        playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden
+        disfrutar de ella en cualquier época del año gracias a la benignidad del clima.1​
+
+        Las Canteras cuenta con un Sistema de Gestión Ambiental certificado según a la norma UNE-EN ISO 14001 y
+        Certificado de Accesibilidad Universal para el servicio de baño a personas con movilidad reducida, certificado
+        por el mismo organismo.
+
+        La playa de Las Canteras acaba de izar la bandera de la Q de Calidad Turística y suma a este galardón, la
+        Bandera Azul de la Unión Europea, el Certificado ISO de Gestión Ambiental y el Certificado de Accesibilidad
+        Universal, lo que la convierte en uno de los arenales mejor valorados de España.2​
+
+        Los premios ‘Travellers Choice Playas 2013′ sitúa a Las Canteras en el puesto número 10 en España, tras un
+        estudio que ha reconocido la calidad de 276 playas ubicadas en África, Asia, el Caribe, Centroamérica, Europa,
+        Oriente Medio y EE. UU, entre las que se encuentra la Playa de Cofete, en Fuerteventura, en el puesto número
+        6, y que encabeza la playa de Las Catedrales en Ribadeo.
+
+        El nombre de la playa siempre ha estado vinculado a La Barra, una roca sedimentaria de arenisca y deposiciones
+        calcáreas que discurre en paralelo a la orilla, proporcionándole abrigo frente al oleaje del norte y
+        confiriéndole una personalidad propia. Antiguamente se la conocía como playa del Arrecife, debido a que La
+        Barra emergía del agua como un arrecife. Posteriormente, esta fue explotada como cantera para extraer la roca
+        que se destinó, entre otros usos, a numerosas construcciones de la ciudad como la Catedral de Canarias. En
+        recuerdo a esta práctica, ya abandonada, pervive hoy el nombre de playa de Las Canteras.
+      </p>
+      <h2>Galería de fotos</h2>
+    </div>
+
+
+    <div class="galeria-fotos">
+      <figure>
+        <picture>
+          <img srcset="./assets/images/1.jpg, ./assets/images/1g.jpg" sizes="(max-width: 480px) 150px, 300px"
+            src="./assets/images/1g.jpg" alt="Foto 1 de Las Canteras" />
+        </picture>
+        <figcaption>Foto 1</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <img srcset="./assets/images/2.jpg, ./assets/images/2g.jpg" sizes="(max-width: 480px) 150px, 300px"
+            src="./assets/images/2g.jpg" alt="Foto 2 de Las Canteras" />
+        </picture>
+        <figcaption>Foto 2</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <img srcset="./assets/images/3.jpg, ./assets/images/3g.jpg" sizes="(max-width: 480px) 150px, 300px"
+            src="./assets/images/3g.jpg" alt="Foto 3 de Las Canteras" />
+        </picture>
+        <figcaption>Foto 3</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <img srcset="./assets/images/4.jpg, ./assets/images/4g.jpg" sizes="(max-width: 480px) 150px, 300px"
+            src="./assets/images/4g.jpg" alt="Foto 4 de Las Canteras" />
+        </picture>
+        <figcaption>Foto 4</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <img srcset="./assets/images/5.jpg, ./assets/images/5g.jpg" sizes="(max-width: 480px) 150px, 300px"
+            src="./assets/images/5g.jpg" alt="Foto 5 de Las Canteras" />
+        </picture>
+        <figcaption>Foto 5</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <img srcset="./assets/images/6.jpg, ./assets/images/6g.jpg" sizes="(max-width: 480px) 150px, 300px"
+            src="./assets/images/6g.jpg" alt="Foto 6 de Las Canteras" />
+        </picture>
+        <figcaption>Foto 6</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <img srcset="./assets/images/7.jpg, ./assets/images/7g.jpg" sizes="(max-width: 480px) 150px, 300px"
+            src="./assets/images/7g.jpg" alt="Foto 7 de Las Canteras" />
+        </picture>
+        <figcaption>Foto 7</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <img srcset="./assets/images/8.jpg, ./assets/images/8g.jpg" sizes="(max-width: 480px) 150px, 300px"
+            src="./assets/images/8g.jpg" alt="Foto 8 de Las Canteras" />
+        </picture>
+        <figcaption>Foto 8</figcaption>
+      </figure>
+    </div>
+
+    <div class="enlaces">
+      <h2>Referencias</h2>
+      <dl>
+        <dt>Wikipedia</dt>
+        <dd><a href="https://es.wikipedia.org/wiki/Playa_de_Las_Canteras">(s/f). Wikipedia - La Playa de Las
+            Canteras.</a></dd>
+        <dt>IStockPhoto</dt>
+        <dd><a href="https://www.istockphoto.com/es/search/2/image?phrase=playa+de+las+canteras">(s/f). IStockPhoto -
+            Fotos de la Playa de Las Canteras.</a></dd>
+      </dl>
+    </div>
+  </main>
+  <footer>
+    <div class="alumno-asig">
+      <img src="./assets/images/sombrilla.png" width="180px" height="180px" loading="lazy" alt="Logo de la página."></a>
+      <p class="alumno">2023 &copy;Moisés Segura Cedrés</p>
+      <p class="alumno">Herramientas HTML y CSS II</p>
+    </div>
+  </footer>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+
+</body>
+
 </html>

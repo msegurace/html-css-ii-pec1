@@ -1,0 +1,197 @@
+.portada {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  max-width: $layout-with;
+  margin: 0 auto;
+}
+
+.portada figure figcaption {
+  text-align: center;
+}
+
+.portada p {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.portada h1 {
+  display: block;
+  font-size: calc(3.5rem + 1vw);
+  font-weight: 900;
+  text-align: center;
+  padding: 60px 0 16px;
+  margin: 0 auto;
+  text-transform: none;
+}
+
+.footer-menu {
+  display: table-cell;
+  text-align: right;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+}
+
+.footer-menu li {
+  display: inline-block;
+  color: $color-texto;
+  font-weight: 600;
+}
+
+.footer-menu a {
+  color: $color-texto;
+  font-size: 1.3rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.footer-menu ul li a.link-active {
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: $color-texto;
+}
+
+.footer-menu .active {
+  color: $color-texto-fondo-oscuro;
+}
+
+.footer-menu-left {
+  clear: both;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.biografia {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  max-width: $layout-with;
+  gap: 10px;
+  margin: 0 auto 40px;
+}
+
+.biografia p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.biografia a {
+  flex: 1;
+  text-decoration: none;
+  color: $color-texto-fondo-oscuro;
+}
+
+.biografia a:visited {
+  text-decoration: none;
+}
+
+.biografia a:hover {
+  color: $color-principal;
+  opacity: 0.5;
+}
+
+.biografia img {
+  margin: 0 auto;
+}
+
+.biografia figure figcaption {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.alumno-asig {
+  display: table-row;
+}
+
+.alumno {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.galeria-fotos {
+  text-align: center;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  max-width: $layout-with;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.galeria-fotos figure {
+  padding-top: 20px;
+}
+
+.galeria-fotos figure figcaption {
+  text-align: center;
+}
+
+.enlaces {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1000px;
+  gap: 10px;
+  margin: 0 auto 40px;
+}
+
+dt {
+  font-size: 2.5rem;
+  color: $color-principal;
+  font-weight: 700;
+}
+
+dd {
+  color: $color-principal;
+  font-size: 1.9rem;
+  margin-left: 0;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 830px) and (min-width: 481px) {
+  .portada {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    margin: 10 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portada {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+  }
+
+  .portada img {
+    max-width: 470;
+    margin: 0 auto;
+  }
+
+  .galeria-fotos picture img {
+    max-width: 450px;
+  }
+
+  .alumn-asig {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .alumno {
+    text-align: center;
+  }
+}
