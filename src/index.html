@@ -6,7 +6,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="./assets/smacss/app.scss">
-  <link rel="stylesheet" type="text/css" href="/dist/index.04966099.css ">
   <title>PEC 1 - Moisés Segura Cedrés</title>
 </head>
 
@@ -20,7 +19,7 @@
   <main class="index-container">
     <div class="portada">
       <picture>
-        <source media="(max-width: 480px)" srcset="./assets/images/fotoprincipal.jpg?as=webp&width=350"
+        <source media="(max-width: 600px)" srcset="./assets/images/fotoprincipal.jpg?as=webp&width=350"
           type="image/webp" />
         <source media="(min-width: 481px) and (max-width: 830px)" srcset="./assets/images/fotoprincipal.jpg?as=webp"
           type="image/webp" />
@@ -74,61 +73,59 @@
       </p>
       <h2>Galería de fotos</h2>
     </div>
-
-
     <div class="galeria-fotos">
       <figure>
         <picture>
-          <img srcset="./assets/images/1.jpg, ./assets/images/1g.jpg" sizes="(max-width: 480px) 150px, 300px"
+          <img srcset="./assets/images/1.jpg, ./assets/images/1g.jpg" sizes="(max-width: 600px) 150px, 300px"
             src="./assets/images/1g.jpg" alt="Foto 1 de Las Canteras" />
         </picture>
         <figcaption>Foto 1</figcaption>
       </figure>
       <figure>
         <picture>
-          <img srcset="./assets/images/2.jpg, ./assets/images/2g.jpg" sizes="(max-width: 480px) 150px, 300px"
+          <img srcset="./assets/images/2.jpg, ./assets/images/2g.jpg" sizes="(max-width: 600px) 150px, 300px"
             src="./assets/images/2g.jpg" alt="Foto 2 de Las Canteras" />
         </picture>
         <figcaption>Foto 2</figcaption>
       </figure>
       <figure>
         <picture>
-          <img srcset="./assets/images/3.jpg, ./assets/images/3g.jpg" sizes="(max-width: 480px) 150px, 300px"
+          <img srcset="./assets/images/3.jpg, ./assets/images/3g.jpg" sizes="(max-width: 600px) 150px, 300px"
             src="./assets/images/3g.jpg" alt="Foto 3 de Las Canteras" />
         </picture>
         <figcaption>Foto 3</figcaption>
       </figure>
       <figure>
         <picture>
-          <img srcset="./assets/images/4.jpg, ./assets/images/4g.jpg" sizes="(max-width: 480px) 150px, 300px"
+          <img srcset="./assets/images/4.jpg, ./assets/images/4g.jpg" sizes="(max-width: 600px) 150px, 300px"
             src="./assets/images/4g.jpg" alt="Foto 4 de Las Canteras" />
         </picture>
         <figcaption>Foto 4</figcaption>
       </figure>
       <figure>
         <picture>
-          <img srcset="./assets/images/5.jpg, ./assets/images/5g.jpg" sizes="(max-width: 480px) 150px, 300px"
+          <img srcset="./assets/images/5.jpg, ./assets/images/5g.jpg" sizes="(max-width: 600px) 150px, 300px"
             src="./assets/images/5g.jpg" alt="Foto 5 de Las Canteras" />
         </picture>
         <figcaption>Foto 5</figcaption>
       </figure>
       <figure>
         <picture>
-          <img srcset="./assets/images/6.jpg, ./assets/images/6g.jpg" sizes="(max-width: 480px) 150px, 300px"
+          <img srcset="./assets/images/6.jpg, ./assets/images/6g.jpg" sizes="(max-width: 600px) 150px, 300px"
             src="./assets/images/6g.jpg" alt="Foto 6 de Las Canteras" />
         </picture>
         <figcaption>Foto 6</figcaption>
       </figure>
       <figure>
         <picture>
-          <img srcset="./assets/images/7.jpg, ./assets/images/7g.jpg" sizes="(max-width: 480px) 150px, 300px"
+          <img srcset="./assets/images/7.jpg, ./assets/images/7g.jpg" sizes="(max-width: 600px) 150px, 300px"
             src="./assets/images/7g.jpg" alt="Foto 7 de Las Canteras" />
         </picture>
         <figcaption>Foto 7</figcaption>
       </figure>
       <figure>
         <picture>
-          <img srcset="./assets/images/8.jpg, ./assets/images/8g.jpg" sizes="(max-width: 480px) 150px, 300px"
+          <img srcset="./assets/images/8.jpg, ./assets/images/8g.jpg" sizes="(max-width: 600px) 150px, 300px"
             src="./assets/images/8g.jpg" alt="Foto 8 de Las Canteras" />
         </picture>
         <figcaption>Foto 8</figcaption>
@@ -147,13 +144,7 @@
       </dl>
     </div>
   </main>
-  <footer>
-    <div class="alumno-asig">
-      <img src="./assets/images/sombrilla.png" width="180px" height="180px" loading="lazy" alt="Logo de la página."></a>
-      <p class="alumno">2023 &copy;Moisés Segura Cedrés</p>
-      <p class="alumno">Herramientas HTML y CSS II</p>
-    </div>
-  </footer>
+  <include src="./src/views/footer.html"></include>
   <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 
 </body>
